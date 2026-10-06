@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // 1. Simple If
+        let age = 19
+        if(age>18){
+            console.log('You can apply for Driving Lisence')
+        }
+
+
+        // 2. If-else
+        let stockAvailable = false
+        if(stockAvailable){
+            console.log('Your items is added into the cart Successfully...')
+        }
+        else{
+            console.log('Item is Out of Stock..')
+        }
+
+
+        // 3. If-else-if
+        let marks = 45;
+
+        if(marks>=90){
+            console.log('Student Passed With Grade A')
+        }
+        else if(marks>=70){
+            console.log('Student Passed With Grade B')
+        }
+        else if(marks >= 50){
+            console.log('Student Passed with Grade C')
+        }
+        else{
+           console.log('Student Got Failed..') 
+        }
+
+
+        // switch : It selects one conditions from given multiple possibilities
+
+        let day = 5
+
+        switch(day){
+            case 1: console.log('First Day Of Week is Monday')
+                    break;
+            case 2: console.log('Second Day Of Week is Tuesday')
+                    break
+            case 3:console.log('Third Day Of Week is Wednesday')
+                    break
+            case 4: console.log('Fourth Day Of Week is Thursday')
+                    break;
+            case 5: console.log('Fifth Day Of Week is Friday')
+                    break;
+            case 6: console.log('Sixth Day Of Week is Fun Day..')
+                    break;
+            case 7: console.log('Seventh Day Of Week is just chill.')
+                    break;
+            default:
+                console.log('Invalid Days Entered..')
+
+
+            }
+
+
+            // For Loop
+            // for(initialization;condition;inc/dec){}
+            // for(let i=1; i<=2; i++){
+            //     console.log(i) // 1 2 3 4 5
+            // }
+
+
+            // let i = 100
+            // while(i<=120){
+            //     console.log(i)  // 100 101
+            //     i++ // 102
+            // }
+
+            // let i = 10
+            // do{
+            //     console.log(i) //10
+            //     i++ //11
+            // }
+            // while(i<=5)
+
+
+            // Function
+
+            function Greet(name,age){
+                console.log('Hii Good Evening Student',name)
+                console.log('Your age is',age)
+            }
+            Greet('Purna',20)
+
+
+            function Addition(a,b,c){
+                return a+b+c
+            }
+            console.log(Addition(10,20,30))
+
+            // Array: It is collection of elements of different data types
+            const fruit = ['Apple','Banana','Papaya','Avacado']
+            console.log(fruit[3])
+
+            const arr = ['Apple',120,true,null]
+            console.log(arr)
+
+            const electronics = ['Fan','Bulb','AC','Fridge','LED']
+            console.log(electronics.length)
+
+            for(let i=0;i<electronics.length;i++){
+                console.log(electronics[i])
+            }
+
+
+            // Object
+           const car = {
+                productName:'Wagoner',
+                model:'LXI',
+                brand:'Suzuki',
+                color:'Red'
+            }
+
+            // Modification
+            car.productName = 'Mahindra'
+
+            // Add New Property
+            car.price = 800000
+            console.log(car)
+
+            // Object Notation: To access specific value
+            console.log(car.productName)
+
+
+
+            const product = [
+                {id:101,name:'Laptop',price:56000,brand:'Dell'},
+                {id:102,name:'Shoes',price:6000,brand:'Puma'},
+                {id:103,name:'Bottel',price:8000,brand:'Milton'},
+                {id:104,name:'Iphone',price:76000,brand:'Apple'},
+                {id:105,name:'Charger',price:4000,brand:'Portronics'},
+                {id:106,name:'AC',price:58000,brand:'Whirlpool'},
+            ]
+
+            for(let i=0;i<product.length;i++){
+                console.log(product[i])
+            }
+            
+
+
+
+
+
+    </script>
+</body>
+</html>
