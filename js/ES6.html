@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+      let score = 120
+      score++
+      score++
+      score++
+      console.log(score)
+
+      const country = "India"
+      console.log(country)
+
+
+    //   Template Literal
+
+    let name = "Purna"
+    let age = 21
+    let course = "Full Stack Developement"
+
+    console.log(`My name is ${name} and My age is ${age} And I am student of ${course}`)
+
+
+    // Arrow Function
+    const fun = ()=> console.log('Welcome To my first Arrow Function')
+    fun()
+
+
+    // function addition(a,b,c){
+    //     return a+b+c
+    // }
+    // console.log(addition(10,20,30))
+
+    const addition = (a,b,c)=> a+b+c
+    console.log(addition(10,20,30))
+
+    const substraction = (x,y)=> {
+        console.log(`The Substraction of X and Y Is: ${x-y}`)
+    }
+    substraction(100,60)
+
+    // Normal Function
+    function Multiplication(x,y){
+        console.log(x*y)
+    }
+    Multiplication(10,20)
+
+
+    // Arrow Function
+    const multiply = (x,y)=> console.log(x*y)
+    multiply(20,40)
+
+
+
+
+
+
+    // Spread: Unpack or expands or separate the values from an array or object
+
+    const fruit1 = ['Apple','Banana','Papaya','Orange','Avacado']
+    console.log(...fruit1) 
+
+    const course1 = ['OS','CN','Automata','Soft Skill']
+    const course2 = ['COA','Python','Java','Full Stack Dev']
+                     
+    const courses = [...course1,...course2]
+    console.log(courses)
+
+    // Object
+    const car = {name:'Wagoner',price:800000}
+
+    const ExCar = {...car,color:'White',brand:'Suzuki'}
+    console.log(ExCar)
+
+
+
+    // Destructuring : The process that allows you access the values from an Array or object by assigning to another variable
+
+    const electronics = ['Fan','Bulb','LED','AC','Cooler']
+    const [Purna,Manoj,Revathi] = electronics
+    console.log(Manoj)
+
+
+    const clothes = {
+        name:'Shirt',
+        brand:'Peter England',
+        price:4500,
+        color:'Green'
+    }
+
+    const {brand,color,price} = clothes
+    console.log(brand,color,price)
+
+    
+    
+
+
+
+
+
+
+
+    
+
+    
+
+
+    </script>
+</body>
+</html>
