@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 200px;
+            padding: 20px;
+            background-color: goldenrod;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-family: inherit;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn">Add To Cart</button>
+
+    <script>
+
+       const button = document.getElementById('btn')
+       button.addEventListener('click',()=>{
+        alert('Product Added into the cart')
+        alert('I am very Happy!! ')
+       })
+    </script>
+</body>
+</html>
